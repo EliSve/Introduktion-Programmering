@@ -1,5 +1,4 @@
-import org.junit.Test;
-import  static org.junit.Assert.assertEquals;
+
 
 public class Counter {
     //värden
@@ -20,10 +19,13 @@ public class Counter {
         if (!myInput.equals("Stop")) {
                 myCounter += myInput.length();
 
-    // Test
-    public void shouldReturnCorrectmyCounter();
-
         }
-    }
 
+    }
+    // försöker öka rader
+    public void increasemyRows() {
+        this.myRows++;
+
+    }
 }
+

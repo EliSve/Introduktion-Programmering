@@ -6,21 +6,34 @@ public class Logic {
 
         String myInput = "";
         Counter counter = new Counter();
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Write whatever you want");
-        //läs in första raden
-        myInput = scan.nextLine();
+
+
+
+
         //gör nedan tills du skriver Stop
         while (!myInput.equals("Stop")) {
             //spara resultatet i counter
+            counter.increasemyRows();
 
+            Scanner scan = new Scanner(System.in);
+            System.out.println("Write whatever you want");
+            myInput = scan.nextLine();
+
+
+            if (!myInput.equals("Stop")) {
+                counter.increasemyRows();
+            }
 
             //läs in ny rad
             myInput = scan.nextLine();
+
 
         }
         //hämta ifrån counter resultatet och skriv ut det
         System.out.println("The result is: ");
 
+
     }
 }
+
+
