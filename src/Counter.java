@@ -1,5 +1,3 @@
-
-
 public class Counter {
     //värden
     private int myRows;
